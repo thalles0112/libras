@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo-3.png" type="image/x-icon">
+    <title>Projeto Integrador</title>
+</head>
+<body>
+
+    <div class='title'> 
+        <a href="index.html"> <h1>Projeto Integrador</h1> </a>
+        <img style="height: 100px" src="img/logo-3.png">
+    </div>
+    
+
+
+    
+    
+    <div class="topico">
+        <h2>Estrutura Básica</h2>
+        <ul>
+            <a href="dataset.html">   <li>Estrutura do Banco de dados</li>          </a>
+            <a href="preprocess.html"><li>Preprocessamento de imagens (frames)</li> </a>
+            <a href="RN.html">        <li>Treinamento da rede neural</li>           </a>
+            <a href="predict.html">   <li>Leitura da camera</li>                    </a>
+        </ul>
+    </div>
+
+
+    <div class="topico">      
+        <h2 style="text-align: center;">I Ler diretórios</h2>
+        <img src="img/loadVideo.png">
+
+    </div>
+    <div class='topico-texto'>
+        <p>
+            Esta parte do código listará todos os caminhos dos videos presentes na pasta principal e adicionar à cada caminho lido o numero da classe na ordem das pastas descritas. Por exemplo: A função pede a pasta principal e o nome das subpastas. Supondo que foi dados os nomes 'oi', 'boa' e 'tarde', o algorítmo vai atrelar o label 0 à classe 'oi', 1 à classe 'boa', 2 à classe tarde e assim sucetivamente caso houver outras classes.
+        </p>
+        <p>
+            Por fim a função retornará uma lista de duas dimensões: caminho completo do video e numero de classe respectiva ao sinal de libras.
+        </p>
+    </div>
+    
+    <div class="topico">      
+        <h2 style="text-align: center;">I.I Output</h2>
+        <img src="img/output.png">
+    </div>
+    <div class='topico-texto'>
+        <p>Este é um exemplo de como é o output da função comentada anteriormente.</p>
+
+    </div>
+
+    <div class="topico">      
+        <h2 style="text-align: center;">I.I Preprocessamento</h2>
+        <img src="img/process.png">
+    </div>
+    <div class='topico-texto'>
+        <p>
+            Essa parte do projeto é onde os caminhos retornados pela função anterior serão definitivamente lidos, receberão um tratamento especial onde apenas as silhuetas presentes nos videos ficarão aparentes, em outras palavras, os contornos das pessoas ficarão brancos e todo o resto do video ficará preto
+        </p>
+    </div>
+<footer>
+    <div>
+        veja o codigo clicando <a target='new' href="https://github.com/thalles0112/libras">aqui</a>
+    </div>
+</footer>
+
+
+</body>
+</html>
