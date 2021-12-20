@@ -46,4 +46,4 @@ if TRAIN:
 
     net.fit(x, y, 32, 7)
 
-   # net.save('modelconv2d-3')
+    net.save('modelconv2d-3')
