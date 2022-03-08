@@ -7,7 +7,7 @@ from kivy.uix.label import Label
 from kivy.uix.boxlayout import BoxLayout
 from kivy.graphics.texture import Texture
 from tensorflow.keras.models import load_model
-from kivy.properties import StringProperty
+
 
 model = load_model('modelconv2d-3')
 cap = cv.VideoCapture(0)
@@ -46,7 +46,7 @@ class OpenCam(App):
     def build(self):
         self.img1 = Image(source='logoCL.jpg')
        
-        label2= Label(text=StringProperty(self.predFinal))
+        label2= Label(text='teste')
         layout = BoxLayout(orientation='vertical')  
         
         layout.add_widget(self.img1)
